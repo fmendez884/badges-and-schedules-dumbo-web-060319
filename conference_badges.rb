@@ -25,10 +25,16 @@ def assign_rooms(array)
 end
 
 def printer(attendees)
+ badge = batch_badge_creator(attendees)
+ rooms = assign_rooms(attendees)
   i = 0
-  while ( i < array.length)
-    puts batch_badge_creator(attendees)
-  puts assign_rooms(attendees)
+  j = 0
+  while ( i < badge.length)
+    puts badge[i]
     i += 1
+  end
+  while (j < rooms.length)
+    puts rooms[j]
+    j += 1
   end
 end
