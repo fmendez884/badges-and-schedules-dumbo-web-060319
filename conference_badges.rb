@@ -16,12 +16,12 @@ end
 
 def assign_rooms(array)
   rooms = []
-   i = 0
-  while ( i < array.length)
-    rooms.push("Hello, #{array[i]}! You'll be assigned to room #{i+1}!")
-    i += 1
-  end
-  return rooms
+    i = 0
+    while ( i < array.length)
+      rooms.push("Hello, #{array[i]}! You'll be assigned to room #{i+1}!")
+      i += 1
+    end
+    return rooms
 end
 
 def printer(batch_badge_creator(array), assign_rooms(array))
